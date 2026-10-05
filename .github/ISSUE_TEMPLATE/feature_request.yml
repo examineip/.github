@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest something the library should handle.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The real-world task, not the solution — it helps judge whether it fits a single-file library.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+  - type: textarea
+    id: reference
+    attributes:
+      label: Spec or reference
+      description: RFC, standard or reference implementation, if there is one.

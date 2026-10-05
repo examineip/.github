@@ -1,0 +1,37 @@
+name: Wrong result
+description: The library returned an answer that is wrong for a specific input.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks — a concrete wrong answer is the most useful report there is.
+        Please use documentation values (192.0.2.1, 2001:db8::1, example.com) instead of real people's data where you can.
+        **Security problem?** Don't file it here — email contact@examineip.com (see SECURITY.md).
+  - type: textarea
+    id: input
+    attributes:
+      label: Exact input
+      description: The address, domain, header or record you passed in.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: got
+    attributes:
+      label: What it returned
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it should return, and why
+      description: An RFC section, a reference implementation's output, or a real-world example.
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime and version
+      placeholder: "Node 22.11 / PHP 8.3 / Chrome 151"
